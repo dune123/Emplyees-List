@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- the entire body must be written by student -->
+	<div class="container">
+        <h3>New Employees</h3>
+        <div class="topContainer">
+            <div class="NameContainer">
+                <label>Enter Name</label>
+                <input placeholder='Enter Name' id="enterName"/>
+            </div>
+            <div class="professionContainer">
+                <label>Enter profession</label>
+                <input placeholder='Enter profession' id="enterProfession"/>
+            </div>
+            <div class="ageContainer">
+                <label>Enter Age</label>
+                <input placeholder='Enter Age' id="enterAge"/>
+            </div>
+        </div>
+        <div class="buttonContainer">
+            <button onclick="addEmployee()">Add User</button>
+        </div>
+         <div class="message">
+            <p id="errorMessage">Error :Please Make sure All the field before adding in an emplyee</p>
+            <p id="successMessage" style="display: none; color: green;">Success : Message Added</p>
+        </div>
+        <div class="employeeContainer">
+            <p>Added Employee</p>
+            <div class="tableContainer">
+                <p id="dataMessage">Data not found</p>
+                <div id="tablCont">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js">
+</script>
+
+</body>
+
+</html>
